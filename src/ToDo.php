@@ -83,7 +83,7 @@ class ToDo
   */
   public function delete($id){
     if ($this->pdo->table($this->dbtable)->where('id',$id)->delete()) {
-      return 1
+      return 1;
     }else {
       return 0;
     }
