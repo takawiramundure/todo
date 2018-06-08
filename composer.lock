@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "393d8caffa99217b154501b28ec5ef99",
+    "content-hash": "68b89b2da72428b1b1b822c3e75019d1",
     "packages": [
         {
             "name": "izniburak/pdox",

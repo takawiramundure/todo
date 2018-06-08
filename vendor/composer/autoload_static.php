@@ -6,10 +6,24 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit3a9891ac594d8beb0cbe2e837149e75b
 {
+    public static $files = array (
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'T' => 
         array (
             'Taka\\' => 5,
+        ),
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Component\\VarDumper\\' => 28,
+        ),
+        'B' => 
+        array (
+            'Buki\\' => 5,
         ),
     );
 
@@ -18,10 +32,18 @@ class ComposerStaticInit3a9891ac594d8beb0cbe2e837149e75b
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
-    );
-
-    public static $classMap = array (
-        'Taka\\ToDo' => __DIR__ . '/../..' . '/src/ToDo.php',
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Component\\VarDumper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/var-dumper',
+        ),
+        'Buki\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/izniburak/pdox/src',
+        ),
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -29,7 +51,6 @@ class ComposerStaticInit3a9891ac594d8beb0cbe2e837149e75b
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit3a9891ac594d8beb0cbe2e837149e75b::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit3a9891ac594d8beb0cbe2e837149e75b::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit3a9891ac594d8beb0cbe2e837149e75b::$classMap;
 
         }, null, ClassLoader::class);
     }
