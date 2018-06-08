@@ -1,0 +1,29 @@
+{
+    "name": "takawiramundure/todo", 
+    "type": "library",
+    "description": "todo list library with doctrine orm",
+    "keywords": ["todo"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Takawira",
+            "email": "takawiramundure@gmail.com",
+            "homepage": "https://github.com/takawiramundure",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/takawiramundure/todo",
+        "issues": "https://github.com/takawiramundure/todo/issues"
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "izniburak/pdox": "^1.2",
+        "symfony/var-dumper":"^3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Taka\\": "src"
+        }
+    }
+}
